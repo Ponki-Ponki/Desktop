@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #222222;
+  height: 75px;
+  width: 100vw;
+}
+.head_index {
+  display: flex;
+  flex-direction: row;
+}
+.h1_index {
+  align-items: center;
+}

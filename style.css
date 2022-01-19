@@ -22,9 +22,6 @@
 .h_menu img {
   padding-left: 33px;
 }
-.menu :hover {
-  display: block;
-}
 .razdel {
   font-family: Lato, sans-serif;
   font-style: normal;
@@ -43,7 +40,7 @@
   padding: 16px 16px 16px 33px;
   top: 75px;
   left: 1368px;
-  height: 698px;
+  height: 733px;
   width: 183px;
 }
 .lim {
@@ -93,6 +90,10 @@
   background-color: #f1e4e6;
   height: 764px;
 }
+.head_img {
+  box-sizing: border-box;
+  width: 100%;
+}
 .h_index {
   display: flex;
   margin-left: 64px;
@@ -134,7 +135,6 @@
   height: 260px;
 }
 .offer div:nth-child(4) {
-  grid-column: 1/4;
   object-fit: contain;
   height: 180px;
   padding-bottom: 0;
@@ -286,7 +286,7 @@
 }
 .feature_text {
   font-style: normal;
-  font-weight: 300;
+  font-weight: 300 !important;
   font-size: 13.972px;
   line-height: 17px;
   text-align: center;
@@ -380,12 +380,104 @@
   line-height: 19px;
   color: #fbfbfb;
 }
-/*.inst_r {
-  display: none;
+.footer div {
+  display: flex;
+  flex-direction: row;
 }
-.inst_w:hover ~ .inst_r {
-  display: block;
+.footer div:nth-child(2) {
+  width: 149px;
+  justify-content: space-between;
+}
+.inst_r {
+  display: none;
 }
 .inst_w:hover {
   display: none;
-}*/
+}
+
+.inst_w:hover ~ .inst_r {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .menu_list {
+    display: none;
+  }
+  .header {
+    padding: 0 32px 0 32px;
+  }
+  .head_index {
+    height: 368px;
+  }
+  .h1_index {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .h2_index {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .head_text {
+    width: 310px;
+    height: 78px;
+  }
+  .h_index {
+    margin-left: 39px;
+  }
+  .main {
+    margin: 20px 16px 65px 16px;
+  }
+  .offer div {
+    height: 168px;
+    padding-bottom: 20px;
+    width: 232px;
+  }
+  .offer div img {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .offer div:nth-child(4) {
+    height: 116px;
+    width: auto;
+  }
+  .offer p {
+    left: 39px;
+    top: 58px;
+  }
+  .offer div:nth-child(2) p {
+    left: 60px;
+  }
+  .offer div:nth-child(3) p {
+    left: 60px;
+  }
+  .offer div:nth-child(4) p {
+    top: 33px;
+    left: 288px;
+  }
+  .products_card_area {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+  }
+  .feature {
+    padding: 48px 204px 64px;
+    flex-direction: column;
+    height: 610px;
+  }
+  .frame_footer {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 693px;
+    padding-left: 204px;
+    padding-right: 204px;
+  }
+  .footeer_sub {
+    margin-right: 0;
+  }
+  .email {
+    width: 234px;
+  }
+  .footer {
+    padding: 0px 32px 0px 32px;
+  }
+}

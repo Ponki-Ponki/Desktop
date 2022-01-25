@@ -6,6 +6,10 @@
 .otst {
   padding: 0 14.3% 0 14.3%;
 }
+.op,
+p {
+  opacity: 0.6;
+}
 .page {
   display: grid;
   grid-template-columns: 1fr;
@@ -612,6 +616,113 @@
   padding-right: 16px;
 }
 
+.product_image_big {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.product_left,
+.product_rigth {
+  background-color: rgba(42, 42, 42, 0.15);
+  padding: 13px;
+}
+/*.product_left:hover {
+}
+.product_rigth:hover {
+}*/
+.description {
+  height: 472px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 65px;
+  border: 1px solid #eaeaea;
+  z-index: 1;
+  position: relative;
+  top: -60px;
+  background-color: #ffffff;
+}
+.description img:not(.description div img) {
+  width: 63px;
+  height: 3px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.description p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5e5e5e;
+  width: 575px;
+}
+.description span {
+  color: #f16d7f;
+}
+.description h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4d4d4d;
+  padding-bottom: 48px;
+}
+.description h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ef5b70;
+  padding-top: 32px;
+  padding-bottom: 65px;
+}
+.description hr {
+  width: 641px;
+}
+.seting_product {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  padding-top: 65px;
+  padding-bottom: 49px;
+}
+.seting_product_1,
+.seting_product_2,
+.seting_product_3 {
+  padding-left: 9px;
+  padding-right: 23px;
+}
+.add_to_card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ff6a6a;
+  padding: 14px 23.5px 9px 23.5px;
+  align-items: center;
+  width: 164px;
+}
+.add_to_card img {
+  padding-right: 23px;
+}
+.add_to_card p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+  opacity: 1;
+}
+.catal_area {
+  grid-template-rows: none;
+  padding-top: 68px;
+  padding-bottom: 128px;
+}
+
 @media (max-width: 1025px) {
   .otst {
     padding: 0px 8% 0px 8%;
@@ -723,6 +834,9 @@
   .size {
     left: 162px;
   }
+  .catal_area {
+    padding-bottom: 108px;
+  }
 }
 
 @media (max-width: 769px) {
@@ -818,6 +932,20 @@
   .filtr {
     padding-top: 24px;
   }
+  .catal_area {
+    padding-bottom: 68px;
+  }
+  .null {
+    padding: 0px 0px 130px 0px;
+  }
+  .description {
+    top: 0px;
+    border-top: 2px solid #eaeaea;
+    border-left: 0px;
+    border-right: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media (max-width: 668px) {
@@ -892,9 +1020,15 @@
     font-size: 20px;
     line-height: 24px;
   }
+  .null {
+    padding: 0px 0px 80px 0px;
+  }
 }
 
 @media (max-width: 376px) {
+  .otst {
+    padding: 0px 8px 0px 7px;
+  }
   .head_index div:first-child {
     display: none;
   }
@@ -1015,6 +1149,7 @@
   }
   .filtr {
     align-items: flex-start;
+    padding-top: 24px;
   }
   .size_down1,
   .size_down2,
@@ -1027,5 +1162,59 @@
   .navig_list {
     margin-left: 11%;
     margin-right: 11%;
+  }
+  .product_image_big {
+    height: 624px;
+    width: 100%;
+    position: relative;
+  }
+  .product_image_big div:nth-child(2) img {
+    width: 374px;
+    height: 454px;
+  }
+  .description {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 521px;
+  }
+  .product_left {
+    position: absolute;
+    left: 0px;
+  }
+  .product_rigth {
+    position: absolute;
+    right: 0px;
+  }
+  .description p {
+    line-height: 20px;
+    width: 340px;
+  }
+  .description hr {
+    width: 175px;
+  }
+  .seting_product {
+    font-size: 10px;
+    line-height: 12px;
+    padding-left: 7px;
+  }
+  .seting_product_1,
+  .seting_product_2,
+  .seting_product_3 {
+    padding-left: 10px;
+    padding-right: 25px;
+  }
+  .null {
+    padding: 0px 0px 65px 0px;
+  }
+  .catal_area {
+    padding-bottom: 64px;
+  }
+  .footer {
+    flex-flow: column-reverse;
+    justify-content: space-evenly;
+    padding: 43px 0px 24px 0px;
+  }
+  .footer div:nth-child(1) {
+    padding-top: 25px;
   }
 }

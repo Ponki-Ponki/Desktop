@@ -1,2 +1,2 @@
 index готов
-catalog готов
+catalog готов 

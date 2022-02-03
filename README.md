@@ -1,2 +1,5 @@
 index готов
-catalog готов 
+catalog готов
+product готов
+card готов
+registration готов

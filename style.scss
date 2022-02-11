@@ -30,6 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  clear: left;
 }
 
 .logo {
@@ -839,6 +840,10 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 22px 60px 0 31px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #575757;
 }
 
 .card_text h5 {
@@ -849,12 +854,6 @@
   color: #222222;
 }
 
-.card_text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  color: #575757;
-}
 
 .card_text p span {
   color: #ef5b70;

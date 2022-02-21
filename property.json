@@ -1,0 +1,11 @@
+ {
+  "extends": "stylelint-config-recommended",
+  "rules": {
+    "property-no-vendor-prefix": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ]
+  }
+}
